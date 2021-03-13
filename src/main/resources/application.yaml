@@ -1,0 +1,57 @@
+spring:
+   servlet:
+      multipart:
+         max-file-size: 256MB
+         max-request-size: 256MB
+         enabled: true
+   profiles:
+      active: dev
+   datasource:
+#     url: jdbc:postgresql://{{DB}}}}:5432/{{DB}}?useUnicode=true&amp;characterEncoding=utf-8&amp;charSet='UTF8'
+#     username: {{DB_USERNAME}}
+#     password: {{DB_PASSWORD}}
+#     driver-class-name: org.postgresql.Driver
+      url: jdbc:h2:mem:notifyman-db
+      driver-class-name: org.h2.Driver
+      username: sa
+      password: password
+   jpa:
+      generate-ddl: true
+      hibernate:
+         ddl-auto: update
+      properties:
+         hibernate:
+#           dialect: org.hibernate.dialect.PostgreSQLDialect
+            dialect: org.hibernate.dialect.H2Dialect
+            jdbc:
+               lob:
+                  non_contextual_creation: true
+---
+app:
+   token:
+      prefix: "Bearer"
+      headerName: "Authorization"
+   swagger:
+      title: Notifyman Core API
+      token_description: Token for test "TEST_TOKEN"
+      description: Notifyman Core API
+      version: 1.0.0-Snapshot
+      contact:
+         name: NOTIFYMAN
+         url: https://fmarslan.com/notifyman
+         email: contact@fmarslan.com
+---
+management:
+   endpoint:
+      metrics:
+         enabled: true
+      health:
+         enabled: true
+      info:
+         enabled: true
+      prometheus:
+         enabled: true
+   endpoints:
+      web:
+         exposure:
+            include: metrics,health, info, prometheus, httptrace, auditevents, beans

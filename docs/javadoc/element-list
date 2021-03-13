@@ -1,0 +1,16 @@
+com.tarsolution.notifyman
+com.tarsolution.notifyman.api
+com.tarsolution.notifyman.common.dto
+com.tarsolution.notifyman.common.exception
+com.tarsolution.notifyman.common.response
+com.tarsolution.notifyman.common.share
+com.tarsolution.notifyman.configuration
+com.tarsolution.notifyman.core.authorization
+com.tarsolution.notifyman.core.base
+com.tarsolution.notifyman.core.filters
+com.tarsolution.notifyman.data.entity
+com.tarsolution.notifyman.data.entity.enums
+com.tarsolution.notifyman.data.repository
+com.tarsolution.notifyman.service.endpoints
+com.tarsolution.notifyman.service.logic
+com.tarsolution.notifyman.service.mapper
