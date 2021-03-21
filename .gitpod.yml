@@ -1,5 +1,12 @@
 image:
   file: .gitpod.Dockerfile
 
+ports:
+- port: 5672
+- port: 15672
+
+# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/44_config_start_tasks/
 tasks:
   - init: ./mvnw install -DskipTests=false
+    command: /opt/rabbitmq/sbin/rabbitmq-server &
+  - command: rabbitmq-plugins enable rabbitmq_management
