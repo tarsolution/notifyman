@@ -1,0 +1,26 @@
+{
+    "javascript.format.enable": true,
+    "vetur.format.defaultFormatter.js": "prettier",
+    "vetur.format.defaultFormatter.html": "prettier",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "java.configuration.runtimes": [
+        {
+            "name": "JDK-11",
+            "path": "/home/gitpod/.sdkman/candidates/java/current",
+            "default": true
+        }
+    ],
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.formatOnSave": true,
+    "redhat.telemetry.enabled": true,
+    "java.project.importOnFirstTimeStartup": "automatic",
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.format.settings.profile": "GoogleStyle"
+}
