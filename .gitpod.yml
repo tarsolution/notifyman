@@ -2,8 +2,10 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: ./mvnw install -DskipTests=false
-
+  - init: mvn clean install -DskipTests=false
+  - init: brew install rabbitmq
+    command: rabbitmq-server
+  
 vscode:
   extensions:
-    - vscjava.vscode-java-debug
+    - vscode-java-debug
