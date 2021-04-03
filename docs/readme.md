@@ -1,10 +1,6 @@
 # Introduction
 
-**Java Doc   :** https://fmarslan.com/notifyman/javadoc
-
-**Source Code:** https://github.com/fmarslan/notifyman
-
-**Issues     :** https://github.com/fmarslan/notifyman/issues
+[Java Docs](https://notifyman.tarsolution.com/javadoc) | [Source Code](https://github.com/tarsolution/notifyman) | [Issues](https://github.com/tarsolution/notifyman/issues) | [Plugin Development](https://shared-lib.notifyman.tarsolution.com/)
 
 ## Purpose
 
