@@ -1,4 +1,4 @@
-# Introduction
+# Notifyman
 
 [Java Docs](https://notifyman.tarsolution.com/javadoc) | [Source Code](https://github.com/tarsolution/notifyman) | [Issues](https://github.com/tarsolution/notifyman/issues) | [Plugin Development](https://shared-lib.notifyman.tarsolution.com/)
 
